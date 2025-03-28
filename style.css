@@ -8,6 +8,11 @@
     src: url(assets/fonts/Roboto-VariableFont_wdth\,wght.ttf);
 }
 
+@font-face {
+    font-family: Norse;
+    src: url(assets/fonts/Norse-Bold.otf);
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -20,6 +25,34 @@ h4 {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
+.body-container {
+    display: flex;
+}
+
+.background-container {
+    background-image: url(assets/images/halie-west-25xggax4bSA-unsplash.jpg);
+    width: 60%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.background-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 40%);
+    position: absolute;
+    top: 36%;
+}
+
+.background-content > p {
+    font-family: Norse;
+    color: white;
+    font-size: 5em;
+}
+
 .content-container {
     display: flex;
     flex-direction: column;
@@ -28,6 +61,7 @@ h4 {
     height: 100vh;
     background-color: var(--input-border-color);
     gap: 20px;
+    width: 100%;
 }
 
 .content-container > .top-content {
@@ -35,6 +69,7 @@ h4 {
     width: 70%;
     font-size: 1em;
     padding-left: 30px;
+    margin-top: 30px;
 }
 
 .form-separator {
