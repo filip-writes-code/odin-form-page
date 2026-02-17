@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <img src="assets/Digital-transformation-amico.png">
+            <a href="https://storyset.com/online">Online illustrations by Storyset</a>
+        </div>
+        <div class="right-panel">
+            <h2>Join now and start building!</h2>
+            <form action="#" id="signup-form" method="post">
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="first-name">First name</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="John" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="last-name">Last name</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Smith" required>
+                </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="john@email.com" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="phone">Phone number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="12345678" minlength="10">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="********" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password-confirm">Confirm password</label>
+                        <input type="password" id="password-confirm" name="password-confirm" placeholder="********" required>
+                </div>
+                </div>
+                <button type="submit" form="signup-form" value="submit">Create Account</button>
+                <span>Already have an account? <a href="#">Log in</a></span>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
